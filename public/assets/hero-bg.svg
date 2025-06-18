@@ -1,0 +1,47 @@
+<svg width="1509" height="639" viewBox="0 0 1509 639" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_5_73)">
+<path d="M78 3.05176e-05L78 638" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M0 6.10352e-05L1509 -4.92533e-06" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M0 75L1509 75" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M0 150L1509 150" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M0 225L1509 225" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M0 300L1509 300" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M0 375L1509 375" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M0 450L1509 450" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M0 525L1509 525" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M0 600L1509 600" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M153 3.05176e-05L153 638" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M228 3.05176e-05L228 638" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M303 3.05176e-05L303 638" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M378 3.05176e-05L378 638" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M453 3.05176e-05L453 638" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M528 3.05176e-05L528 638" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M603 3.05176e-05L603 638" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M678 3.05176e-05L678 638" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M753 3.05176e-05L753 638" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M828 3.05176e-05L828 638" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M903 3.05176e-05L903 638" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M978 3.05176e-05L978 638" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M1053 3.05176e-05L1053 638" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M1128 3.05176e-05L1128 638" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M1203 3.05176e-05L1203 638" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M1278 3.05176e-05L1278 638" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M1353 3.05176e-05L1353 638" stroke="#414141" stroke-dasharray="3 3"/>
+<path d="M1428 3.05176e-05L1428 638" stroke="#414141" stroke-dasharray="3 3"/>
+<rect y="-0.999969" width="1509" height="638" fill="url(#paint0_linear_5_73)"/>
+<rect y="-0.999969" width="1509" height="638" fill="url(#paint1_linear_5_73)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_5_73" x1="755" y1="-69" x2="755" y2="637" gradientUnits="userSpaceOnUse">
+<stop/>
+<stop offset="0.966346" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear_5_73" x1="755" y1="318" x2="755" y2="609" gradientUnits="userSpaceOnUse">
+<stop stop-opacity="0"/>
+<stop offset="1"/>
+</linearGradient>
+<clipPath id="clip0_5_73">
+<rect width="1509" height="639" fill="white"/>
+</clipPath>
+</defs>
+</svg>
