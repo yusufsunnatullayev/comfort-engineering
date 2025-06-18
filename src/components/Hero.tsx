@@ -4,7 +4,7 @@ import { BackgroundBeamsWithCollision } from "./ui/background-beams-with-collisi
 
 const Hero = () => {
   return (
-    <section className="relative w-full min-h-[86vh] max-h-[86vh] flex flex-col pb-7 justify-between bg-black/90 bg-[url(/assets/hero-bg.svg)] overflow-hidden">
+    <section className="relative w-full h-full flex-1 flex flex-col pb-7 justify-between bg-black/90 bg-[url(/assets/hero-bg.svg)] overflow-hidden">
       <BackgroundBeamsWithCollision>
         <div className="flex flex-col items-center gap-3">
           <h2 className="font-semibold text-sm bg-gradient-to-r from-[#4A4A4A] to-[#A3A3A3] text-transparent bg-clip-text">

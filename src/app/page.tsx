@@ -10,8 +10,10 @@ import React from "react";
 const Home = () => {
   return (
     <div>
-      <Header />
-      <Hero />
+      <div className="w-full h-screen flex flex-col">
+        <Header />
+        <Hero />
+      </div>
       <About />
       <Projects />
       <Blog />
