@@ -10,7 +10,7 @@ const Hero = () => {
           <h2 className="font-semibold text-xs md:text-sm bg-gradient-to-r from-[#4A4A4A] to-[#A3A3A3] text-transparent bg-clip-text">
             COMFORT ENGINEERING GROUP
           </h2>
-          <h1 className="w-[350px] md:w-auto text-center font-bold text-3xl md:text-[50px] italic">
+          <h1 className="w-[350px] md:w-auto text-center font-bold text-3xl md:text-[50px] italic text-white">
             От земли до идеи — мы создаём то, что <br /> работает точно и живёт
             долго.
           </h1>
@@ -28,7 +28,7 @@ const Hero = () => {
         </div>
       </BackgroundBeamsWithCollision>
       <div className="w-full flex flex-col md:flex-row items-center gap-0 md:gap-4 max-w-7xl mx-auto bg-transparent">
-        <span className="font-medium text-sm">
+        <span className="font-medium text-sm text-white">
           С нами работают лидеры отрасли:
         </span>
         <InfiniteMovingCards />
