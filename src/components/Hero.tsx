@@ -7,22 +7,27 @@ const Hero = () => {
     <section className="relative w-full h-full flex-1 flex flex-col pb-7 justify-between bg-black/90 bg-[url(/assets/hero-bg.svg)] overflow-hidden">
       <BackgroundBeamsWithCollision>
         <div className="flex flex-col items-center gap-3">
-          <h2 className="font-semibold text-sm bg-gradient-to-r from-[#4A4A4A] to-[#A3A3A3] text-transparent bg-clip-text">
+          <h2 className="font-semibold text-xs md:text-sm bg-gradient-to-r from-[#4A4A4A] to-[#A3A3A3] text-transparent bg-clip-text">
             COMFORT ENGINEERING GROUP
           </h2>
-          <h1 className="text-center font-bold text-[50px] italic">
+          <h1 className="w-[350px] md:w-auto text-center font-bold text-3xl md:text-[50px] italic">
             От земли до идеи — мы создаём то, что <br /> работает точно и живёт
             долго.
           </h1>
-          <p className="w-[600px] text-center font-medium text-xs">
+          <p className="w-[350px] md:w-[600px] text-[#AAAAAA] md:text-white text-center font-medium text-[10px] md:text-xs">
             Мы многопрофильный холдинг, который объединяет строительство,
             геологию, производство и агротехнологии в единую экосистему решений.
             Мы управляем сложностью с инженерной точностью, создавая комфортную
             инфраструктуру будущего.
           </p>
+          <a href="#contact">
+            <button className="flex md:hidden mt-4 font-medium text-sm text-white bg-[#083CBC] hover:bg-[#083CBC]/90 rounded-xl py-2 px-6 cursor-pointer">
+              Контакты
+            </button>
+          </a>
         </div>
       </BackgroundBeamsWithCollision>
-      <div className="w-full flex items-center gap-4 max-w-7xl mx-auto bg-transparent">
+      <div className="w-full flex flex-col md:flex-row items-center gap-0 md:gap-4 max-w-7xl mx-auto bg-transparent">
         <span className="font-medium text-sm">
           С нами работают лидеры отрасли:
         </span>

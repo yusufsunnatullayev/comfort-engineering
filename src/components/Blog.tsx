@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -11,6 +11,7 @@ import image3 from "../../public/assets/blog-image3.svg";
 import image4 from "../../public/assets/blog-image4.svg";
 import Image from "next/image";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
+import { useRouter } from "next/navigation";
 
 const blogs = [
   {
@@ -45,6 +46,17 @@ const blogs = [
 
 const Blog = () => {
   const swiperRef = useRef<any>(null);
+  const router = useRouter();
+  const [isMobile, setIsMobile] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handlePrev = () => {
     if (swiperRef.current) {
@@ -61,13 +73,13 @@ const Blog = () => {
   return (
     <section
       id="blog"
-      className="relative w-full flex flex-col gap-10 pt-10 pb-20 px-14 text-black"
+      className="relative w-full flex flex-col gap-10 pt-5 md:pt-10 pb-20 px-4 md:px-14 text-black"
     >
       <div className="flex items-center justify-between">
-        <h1 className="font-semibold text-[36px] text-[#676767]">
+        <h1 className="font-semibold text-xl md:text-[36px] text-[#676767]">
           Блог & Новости
         </h1>
-        <div className="flex gap-4">
+        <div className="hidden md:flex gap-4">
           <button
             onClick={handlePrev}
             className="w-10 h-10 flex items-center justify-center rounded-full bg-[#1546BF] hover:bg-[#1546BF]/90 transition cursor-pointer"
@@ -85,27 +97,37 @@ const Blog = () => {
 
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
-        slidesPerView={3}
+        slidesPerView={1}
         spaceBetween={30}
+        pagination={isMobile ? { clickable: true } : false}
+        breakpoints={{
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+        }}
         modules={[Pagination]}
         className="w-full"
       >
         {blogs.map((blog) => (
           <SwiperSlide
+            onClick={() => router.push(`/blogs/${blog.id}`)}
             key={blog.id}
-            className="!w-[370px] flex flex-col gap-5 !bg-white"
+            className="w-full md:!w-[370px] !h-[380px] md:!h-auto flex flex-col gap-5 !bg-white"
           >
             <Image
-              className="w-full !h-[420px] rounded-3xl"
+              className="w-full !h-[218px] md:!h-[420px] rounded-3xl"
               src={blog.image}
               alt="image"
             />
             <div className="w-full flex flex-col items-start gap-3 pt-2">
-              <span className="font-semibold text-base text-[#1546BF]">
+              <span className="font-semibold text-xs md:text-base text-[#1546BF]">
                 {blog.date}
               </span>
-              <h1 className="font-semibold text-xl text-start">{blog.title}</h1>
-              <p className="font-medium text-sm text-[#4E4E4E] text-start">
+              <h1 className="font-semibold text-base md:text-xl text-start line-clamp-1 md:line-clamp-2">
+                {blog.title}
+              </h1>
+              <p className="font-medium text-sm text-[#4E4E4E] text-start line-clamp-2">
                 {blog.text}
               </p>
             </div>

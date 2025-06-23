@@ -6,6 +6,7 @@ import icon4 from "../../public/assets/projectIcon4.svg";
 import icon5 from "../../public/assets/projectIcon5.svg";
 import icon6 from "../../public/assets/projectIcon6.svg";
 import vector from "../../public/assets/vector.svg";
+import mobileVector from "../../public/assets/mobile-vector.svg";
 import Image from "next/image";
 import { GoArrowUpRight } from "react-icons/go";
 
@@ -52,24 +53,26 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="w-full flex flex-col pt-20 pb-20 px-14 text-black"
+      className="w-full flex flex-col pt-10 md:pt-20 pb-20 px-4 md:px-14 text-black"
     >
-      <h2 className="font-semibold text-[36px] text-[#676767]">Проекты</h2>
-      <div className="w-full flex items-end justify-between mb-10">
-        <h1 className="font-semibold text-[40px] leading-tight">
+      <h2 className="font-semibold text-xl md:text-[36px] text-[#676767]">
+        Проекты
+      </h2>
+      <div className="w-full flex flex-col gap-5 md:gap-0 md:flex-row items-start justify-start md:items-end md:justify-between mb-10">
+        <h1 className="font-semibold text-2xl md:text-[40px] leading-tight">
           Отрасли, в которых мы <br /> работаем
         </h1>
-        <p className="font-medium text-xl">
+        <p className="font-medium text-sm md:text-xl">
           Каждое направление — часть единой системы, в <br /> которой мы
           отвечаем за результат на каждом этапе.
         </p>
       </div>
       <div className="line"></div>
-      <div className="w-full grid grid-cols-3 gap-10 mt-10">
+      <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="w-[434px] h-[194px] flex flex-col justify-between gap-3 cursor-pointer group"
+            className="w-full md:w-[434px] h-[194px] flex flex-col justify-between gap-3 cursor-pointer group"
           >
             <div className="w-full space-y-3">
               {/* Icon with group-hover color */}
@@ -93,9 +96,10 @@ const Projects = () => {
           </div>
         ))}
       </div>
+      {/* Desktop statistics 🚩 */}
       <section
         id="mission"
-        className="w-full flex items-start justify-between mt-40"
+        className="w-full hidden md:flex items-start justify-between mt-40"
       >
         <div className="relative flex flex-col gap-14 items-center">
           {/* 🚩 */}
@@ -138,6 +142,51 @@ const Projects = () => {
         </div>
         <p className="font-bold text-[40px] mt-20">
           Цифры — это не <br /> просто результат.{" "}
+        </p>
+      </section>
+
+      {/* Mobile statistics 🚩 */}
+      <section
+        id="mission"
+        className="relative w-full md:hidden flex items-start justify-between pt-20"
+      >
+        <div className="w-full relative flex flex-col items-start gap-2">
+          <div className="w-[150px] h-[150px] rounded-full border border-[#8F8F8F] flex flex-col items-center justify-center bg-white z-10">
+            <span className="font-semibold text-[36px]">20+</span>
+            <span className="font-medium text-sm text-[#777272]">
+              Лет опыта
+            </span>
+          </div>
+          <div className="w-[150px] h-[150px] self-end rounded-full border border-[#8F8F8F] flex flex-col items-center justify-center bg-white z-10">
+            <span className="font-semibold text-[36px]">100+</span>
+            <span className="font-medium text-sm text-[#777272]">
+              Успешных <br /> проектов
+            </span>
+          </div>
+          <div className="w-[150px] h-[150px] rounded-full border border-[#8F8F8F] flex flex-col items-center justify-center bg-white z-10">
+            <span className="font-semibold text-[36px]">500+</span>
+            <span className="font-medium text-sm text-[#777272]">
+              Партнёров
+            </span>
+          </div>
+          <div className="w-[150px] h-[150px] self-end rounded-full border border-[#8F8F8F] flex flex-col items-center justify-center bg-white z-10">
+            <span className="font-semibold text-[36px]">10</span>
+            <span className="font-medium text-sm text-[#777272]">
+              Направлений
+            </span>
+          </div>
+          <div className="w-[150px] h-[150px] rounded-full border border-[#8F8F8F] flex flex-col items-center justify-center bg-white z-10">
+            <span className="font-semibold text-[36px]">12</span>
+            <span className="font-medium text-sm text-[#777272]">Регионов</span>
+          </div>
+          <Image
+            src={mobileVector}
+            alt="vector"
+            className="absolute top-32 left-20"
+          />
+        </div>
+        <p className="absolute w-[180px] text-end top-10 right-0 font-bold text-2xl">
+          Цифры — это не просто результат.{" "}
         </p>
       </section>
     </section>

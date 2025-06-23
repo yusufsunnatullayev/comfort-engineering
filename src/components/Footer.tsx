@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="w-full px-14 text-black flex items-center justify-between pb-5">
+    <footer className="w-full px-4 md:px-14 text-black flex flex-col gap-4 md:gap-0 md:flex-row items-start md:items-center justify-between pb-5">
       <Image src={logo} alt="footer-logo" />
-      <p className="font-medium text-xs text-[#434343] w-[730px]">
+      <p className="font-medium text-[10px] md:text-xs text-[#434343] w-full md:w-[730px]">
         © 2010–2025 Comfort Engineering. Все права защищены.Все материалы,
         размещённые на данном сайте, являются объектами интеллектуальной
         собственности компании Comfort Engineering и охраняются в соответствии с
