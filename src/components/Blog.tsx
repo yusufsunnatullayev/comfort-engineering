@@ -102,18 +102,18 @@ const Blog = () => {
         pagination={isMobile ? { clickable: true } : false}
         breakpoints={{
           768: {
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 20,
           },
         }}
         modules={[Pagination]}
-        className="w-full"
+        className="mySwiper"
       >
         {blogs.map((blog) => (
           <SwiperSlide
             onClick={() => router.push(`/blogs/${blog.id}`)}
             key={blog.id}
-            className="w-full md:!w-[370px] !h-[380px] md:!h-auto flex flex-col gap-5 !bg-white"
+            className="w-full md:!w-[32%] !h-[380px] md:!h-auto flex flex-col gap-5 !bg-white"
           >
             <Image
               className="w-full !h-[218px] md:!h-[420px] rounded-3xl"
@@ -133,6 +133,9 @@ const Blog = () => {
             </div>
           </SwiperSlide>
         ))}
+        {/* <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide> */}
       </Swiper>
     </section>
   );

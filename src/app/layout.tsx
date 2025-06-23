@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: "Comfort Engineering",
   },
   icons: {
-    icon: "/assets/blue-logo.svg",
+    icon: "/assets/favicon.png",
   },
 };
 

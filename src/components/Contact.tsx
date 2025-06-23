@@ -110,12 +110,6 @@ const Contact = () => {
                 className="w-full p-3 md:p-4 rounded-xl bg-[#F2F2F2] border-none outline-none"
               />
             </div>
-            <div className="flex items-center gap-3">
-              <input type="checkbox" className="cursor-pointer" />
-              <p className="font-medium text-xs text-[#575353]">
-                Я соглашаюсь на обработку персональных данных
-              </p>
-            </div>
             <button className="w-full py-3 md:py-4 bg-[#1546BF] cursor-pointer hover:bg-[#1546BF]/90 font-medium text-base text-white rounded-xl">
               Связаться
             </button>
